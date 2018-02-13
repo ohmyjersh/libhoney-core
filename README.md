@@ -15,11 +15,11 @@ Constructor LibHoney:
 - [ ] Sample Rate (defaults to 1)
 
 Events:
-- [] Make Builder
-- [] Add Fields
-- [] Send
-- [] Validation
-- [] Serialize nested objects to json strings
+- [ ] Make Builder
+- [ ] Add Fields
+- [ ] Send
+- [ ] Validation
+- [ ] Serialize nested objects to json strings
 
 Can set at creation of event:
 - [ ] Team Writekey
