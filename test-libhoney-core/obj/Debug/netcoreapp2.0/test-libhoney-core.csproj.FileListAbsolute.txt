@@ -11,3 +11,5 @@
 /Users/joshjarmain/Development/libhoney-core/test-libhoney-core/obj/Debug/netcoreapp2.0/test-libhoney-core.AssemblyInfo.cs
 /Users/joshjarmain/Development/libhoney-core/test-libhoney-core/obj/Debug/netcoreapp2.0/test-libhoney-core.dll
 /Users/joshjarmain/Development/libhoney-core/test-libhoney-core/obj/Debug/netcoreapp2.0/test-libhoney-core.pdb
+/Users/joshjarmain/Development/libhoney-core/test-libhoney-core/bin/Debug/netcoreapp2.0/libhoney-core.dll
+/Users/joshjarmain/Development/libhoney-core/test-libhoney-core/bin/Debug/netcoreapp2.0/libhoney-core.pdb
