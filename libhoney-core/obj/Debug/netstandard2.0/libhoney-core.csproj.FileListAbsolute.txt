@@ -1,0 +1,8 @@
+/Users/joshjarmain/Development/libhoney-core/libhoney-core/bin/Debug/netstandard2.0/libhoney-core.deps.json
+/Users/joshjarmain/Development/libhoney-core/libhoney-core/bin/Debug/netstandard2.0/libhoney-core.dll
+/Users/joshjarmain/Development/libhoney-core/libhoney-core/bin/Debug/netstandard2.0/libhoney-core.pdb
+/Users/joshjarmain/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.csproj.CoreCompileInputs.cache
+/Users/joshjarmain/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.AssemblyInfoInputs.cache
+/Users/joshjarmain/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.AssemblyInfo.cs
+/Users/joshjarmain/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.dll
+/Users/joshjarmain/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.pdb
