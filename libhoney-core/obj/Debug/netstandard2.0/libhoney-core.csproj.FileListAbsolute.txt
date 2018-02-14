@@ -6,3 +6,11 @@
 /Users/joshjarmain/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.AssemblyInfo.cs
 /Users/joshjarmain/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.dll
 /Users/joshjarmain/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.pdb
+/Users/dev/Documents/Development/libhoney-core/libhoney-core/bin/Debug/netstandard2.0/libhoney-core.deps.json
+/Users/dev/Documents/Development/libhoney-core/libhoney-core/bin/Debug/netstandard2.0/libhoney-core.dll
+/Users/dev/Documents/Development/libhoney-core/libhoney-core/bin/Debug/netstandard2.0/libhoney-core.pdb
+/Users/dev/Documents/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.csproj.CoreCompileInputs.cache
+/Users/dev/Documents/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.AssemblyInfoInputs.cache
+/Users/dev/Documents/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.AssemblyInfo.cs
+/Users/dev/Documents/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.dll
+/Users/dev/Documents/Development/libhoney-core/libhoney-core/obj/Debug/netstandard2.0/libhoney-core.pdb
