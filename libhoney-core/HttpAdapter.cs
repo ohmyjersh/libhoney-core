@@ -1,4 +1,6 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace libhoney_core
@@ -7,6 +9,8 @@ namespace libhoney_core
     {
         private static readonly HttpClient Client = new HttpClient();
 
-        public static async Task<HttpResponseMessage> RequestHandler(HttpRequestMessage request) => await Client.SendAsync(request);
+        public static HttpRequestMessage GenerateRequestMessage(string json) => new HttpRequestMessage();
+
+        public static async Task<HttpResponseMessage> Send(HttpRequestMessage request) => await Client.SendAsync(request);
     }
 }

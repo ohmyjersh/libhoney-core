@@ -10,6 +10,5 @@ namespace libhoney_core
         public string Body { get; internal set; }
         public string ErrorMessage { get; internal set;
         }
-    
     }
 }

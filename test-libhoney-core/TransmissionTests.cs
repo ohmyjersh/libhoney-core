@@ -10,18 +10,13 @@ namespace test_libhoney_core
     public class TransmissionTests
     {
         [Fact]
-        public async Task TestSend()
+        public async Task ShouldReturn500OnException()
         {
-            // var statusCode = HttpStatusCode.Accepted;
-            // var response = await new Transmission().Send(RequestHandler(statusCode), ResponseHandler(), new HttpRequestMessage()); 
-            // Assert.Equal(statusCode, response.StatusCode);
+            Func<HttpRequestMessage, Task<HttpResponseMessage>> handler = request => { throw new Exception("hi"); };
+            var statusCode = HttpStatusCode.InternalServerError;
+            var response = await Transmission.Handler(handler, new HttpRequestMessage()); 
+            Assert.Equal(statusCode, response.StatusCode);
         }
-
-        private Func<HttpResponseMessage, HoneycombResponse> ResponseHandler()
-        {
-            throw new NotImplementedException();
-        }
-
-        private Func<HttpRequestMessage, Task<HttpResponseMessage>> RequestHandler(HttpStatusCode statusCode) => (request) => Task.FromResult(new HttpResponseMessage() { StatusCode = statusCode });
+        private Func<HttpRequestMessage, Task<HttpResponseMessage>> Handler(HttpStatusCode statusCode) => (request) => Task.FromResult(new HttpResponseMessage() { StatusCode = statusCode });
     }
 }

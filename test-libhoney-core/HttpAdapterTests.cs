@@ -10,18 +10,10 @@ namespace test_libhoney_core
     public class HttpAdapterTests
     {
         [Fact]
-        public async Task TestSend()
+        public void ShouldReturn500OnException()
         {
-            // var statusCode = HttpStatusCode.Accepted;
-            // var response = await new Transmission().Send(RequestHandler(statusCode), ResponseHandler(), new HttpRequestMessage()); 
-            // Assert.Equal(statusCode, response.StatusCode);
+            var request = HttpAdapter.GenerateRequestMessage("hi");
+            Assert.True(typeof(HttpRequestMessage) == request.GetType());
         }
-
-        private Func<HttpResponseMessage, HoneycombResponse> ResponseHandler()
-        {
-            throw new NotImplementedException();
-        }
-
-        private Func<HttpRequestMessage, Task<HttpResponseMessage>> RequestHandler(HttpStatusCode statusCode) => (request) => Task.FromResult(new HttpResponseMessage() { StatusCode = statusCode });
     }
 }

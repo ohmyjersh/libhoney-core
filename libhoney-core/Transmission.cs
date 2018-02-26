@@ -5,20 +5,21 @@ using System.Threading.Tasks;
 
 namespace libhoney_core
     {
-        public class Transmission { 
-        private HoneycombResponse ResponseHandler(HttpResponseMessage response) => MapHttpResponseToHoneycombResponse(response);
-            private static HoneycombResponse MapHttpResponseToHoneycombResponse(HttpResponseMessage response) => new HoneycombResponse
-            {
+        public static class Transmission { 
+
+        private static HoneycombResponse MapHttpResponseToHoneycombResponse(HttpResponseMessage response) => new HoneycombResponse
+        {
                 StatusCode = ((HttpStatusCode) response.StatusCode)
-            };
-        public  async Task<HoneycombResponse> Send(Func<HttpRequestMessage, Task<HttpResponseMessage>> requestHandler, 
-            Func<HttpResponseMessage, HoneycombResponse> responseHandler, HttpRequestMessage request) {
+        };
+        public static async Task<HoneycombResponse> Handler(Func<HttpRequestMessage, Task<HttpResponseMessage>> requestHandler, HttpRequestMessage request) {
             try {
                 var response = await requestHandler(request);
-                return responseHandler(response);
+                return MapHttpResponseToHoneycombResponse(response);
             }
-            catch(Exception) {
-                return new HoneycombResponse();
+            catch(Exception ex) {
+                return new HoneycombResponse() {
+                    StatusCode = HttpStatusCode.InternalServerError
+                };
             }
          }
     }
